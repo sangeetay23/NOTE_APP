@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #cfd4e2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+ 
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4a6fea;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+ 
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4a6fea;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+  }
+
+  main {
+    margin: 60px auto 60px; 
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 140px);
+  }
+
+  #my-title {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    background-color: #e7eefc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #my-text {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    background-color: #e7eefc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+
+
+  
+  .note-container {
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #e3ecff;
+    border: 1px solid #c1d4ff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.2s;
+  }
+
+  .note-container:hover {
+    transform: translateY(-2px);
+  }
+
+  .note-container h3 {
+    color: #4a6fea;
+    margin-bottom: 5px;
+  }
+
+  .note-container p {
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .note-container time {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .save-note, .delete-btn, .edit-btn {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .save-note {
+    background-color: #4a6fea;
+  }
+
+  .save-note:hover {
+    background-color: #395bd4;
+  }
+
+  .delete-btn {
+    background-color: #4f81b9;
+  }
+
+  .delete-btn:hover {
+    background-color: #89bdd1;
+  }
+
+  .edit-btn {
+    background-color: #30be6b;
+    color: #333;
+  }
+
+  .edit-btn:hover {
+    background-color: #0ed907;
+  }
+
+  
+  @media (max-width: 500px) {
+    header, footer {
+      font-size: 16px;
+    }
+    #my-title, #my-text {
+      font-size: 14px;
+    }
+  }
